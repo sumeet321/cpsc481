@@ -2,7 +2,7 @@
 
     :
 Marcilino Lamiy - Maromicho12@csu.fullerton.edu
-Sumeet Singh - 
+Sumeet Singh - sumeet321@csu.fullerton.edu
 
 This Python project demonstrates the A* pathfinding algorithm by visualizing the process of finding the shortest path from a starting point to a goal point on a grid-based maze.
 
