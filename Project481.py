@@ -75,19 +75,26 @@ def astar_search(start, goal, maze, ax):
 
 # Example maze
 maze = [
-    [0, 0, 0, 0, 0, 0, 0, 0, 1],
-    [1, 1, 0, 1, 1, 0, 1, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 1],
-    [0, 1, 1, 0, 1, 1, 0, 0, 0],
-    [0, 1, 1, 1, 0, 1, 0, 0, 1],
-    [0, 1, 1, 1, 1, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 1, 1],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+    [0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1],
+    [0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1],
+    [0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1],
+    [0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1],
+    [0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1],
+    [0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 ]
 
 # This is where the user inputs for start and goal points and setting the start point to (0,0)
-gate_letter = input("Enter the gate letter you are departing from (A-I): ").upper()
-gate_number = int(input("Enter the gate number you are departing from (0-7): "))
+gate_letter = input("Enter the gate letter you are departing from (A-N): ").upper()
+gate_number = int(input("Enter the gate number you are departing from (0-14): "))
 start = (0, 0)
 goal = (gate_number, ord(gate_letter) - ord('A'))
 
@@ -99,7 +106,7 @@ ax.plot(goal[1], goal[0], 'ro')
 
 # Setting custom x-axis on the bottom and y-axis labels on the left
 ax.set_xticks(range(len(maze[0])))
-ax.set_xticklabels(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'])
+ax.set_xticklabels(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'])
 ax.yaxis.tick_left()
 
 # Calling for A* search algorithm

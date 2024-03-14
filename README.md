@@ -1,6 +1,6 @@
 # CPSC481-03 A* Pathfinding Algorithm Visualization Project
 
-Contributors:
+    :
 Marcilino Lamiy - Maromicho12@csu.fullerton.edu
 Sumeet Singh - 
 
