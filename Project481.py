@@ -107,6 +107,8 @@ ax.plot(goal[1], goal[0], 'ro')
 # Setting custom x-axis on the bottom and y-axis labels on the left
 ax.set_xticks(range(len(maze[0])))
 ax.set_xticklabels(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'])
+ax.set_yticks(range(len(maze)))
+ax.set_yticklabels(range(len(maze)))
 ax.yaxis.tick_left()
 
 # Calling for A* search algorithm
